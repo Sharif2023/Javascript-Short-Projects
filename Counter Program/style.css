@@ -1,0 +1,81 @@
+body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.monitor {
+    width: 600px;
+    height: 400px;
+    background-color: #333;
+    border: 15px solid #666;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.screen {
+    width: 90%;
+    height: 70%;
+    background-color: black;
+    color: limegreen;
+    font-family: 'Courier New', monospace;
+    font-size: 5em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px solid #444;
+}
+
+.buttonContainer {
+    margin-top: 20px;
+}
+
+.buttons {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    margin: 5px;
+    border: none;
+}
+
+#decreaseBtn {
+    background-color: red;
+}
+
+#resetBtn {
+    background-color: gray;
+}
+
+#increaseBtn {
+    background-color: green;
+}
+
+.buttons:hover {
+    background-color: aqua;
+}
+
+#decreaseBtn:hover {
+    background-color: darkred;
+}
+
+#resetBtn:hover {
+    background-color: darkgray;
+}
+
+#increaseBtn:hover {
+    background-color: darkgreen;
+}
