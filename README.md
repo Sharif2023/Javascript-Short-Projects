@@ -8,3 +8,5 @@
 
 4. Tempareture Conversion
 
+5. Dice Roller
+
