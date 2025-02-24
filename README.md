@@ -12,3 +12,5 @@
 
 6. Dice Roller 2
 
+7. Random Password Generator
+
