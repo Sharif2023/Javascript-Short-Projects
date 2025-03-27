@@ -14,3 +14,9 @@
 
 7. Random Password Generator
 
+8. Digital Clock Program
+
+9. Stopwatch
+
+
+
