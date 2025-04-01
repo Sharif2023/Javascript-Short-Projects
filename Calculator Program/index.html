@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator Program</title>
     <style>
-
-        body{
+        body {
             margin: 0;
             display: flex;
             justify-content: center;
@@ -14,60 +14,70 @@
             height: 100vh;
             background-color: hsl(0, 0%, 95%);
         }
-        #calculator{
+
+        #calculator {
             font-family: Arial, sans-serif;
             background-color: hsl(0, 0%, 15%);
             border-radius: 15px;
-            max-width: 500px;
+            max-width: 400px;
+            width: 100%;
             overflow: hidden;
+            padding: 15px;
+            box-sizing: border-box;
         }
 
-        #display{
+        #display {
             width: 100%;
-            padding: 20px;
-            font-size: 5rem;
-            text-align: left;
+            padding: 15px;
+            font-size: 3rem;
+            text-align: right;
             border: none;
             color: white;
             background-color: hsl(0, 0%, 20%);
-        }
-        #keys{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            padding: 25px;
+            box-sizing: border-box;
         }
 
-        button{
-            width: 100px;
-            height: 100px;
-            border-radius: 50px;
+        #keys {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(80px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+
+        button {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
             border: none;
             background-color: hsl(0, 0%, 30%);
             color: white;
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: bold;
             cursor: pointer;
         }
 
-        button:hover{
+        button:hover {
             background-color: hsl(0, 0%, 40%);
         }
-        button:active{
+
+        button:active {
             background-color: hsl(0, 0%, 50%);
         }
 
-        .operator-btn{
+        .operator-btn {
             background-color: hsl(35, 100%, 55%);
         }
-        .operator-btn:hover{
+
+        .operator-btn:hover {
             background-color: hsl(35, 100%, 65%);
         }
-        .operator-btn:active{
+
+        .operator-btn:active {
             background-color: hsl(35, 100%, 75%);
         }
     </style>
 </head>
+
 <body>
     <div id="calculator">
         <input id="display" readonly>
@@ -94,4 +104,5 @@
 
     <script src="index.js"></script>
 </body>
+
 </html>
